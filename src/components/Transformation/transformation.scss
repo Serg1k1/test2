@@ -1,0 +1,43 @@
+.transformation {
+    padding: 30px 0;
+    height: calc(100% - 76px);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    // .transformation__container
+    &__container {
+        display: grid;
+        gap: 100px;
+    }
+
+    // .transformation__title
+    &__title {
+        color: #fff;
+        font-size: 32px;
+        text-transform: uppercase;
+        background-color: #063c55;
+        padding: 12px;
+        text-align: center;
+        border-radius: 12px;
+    }
+
+    // .transformation__inputs
+    &__inputs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+
+    // .transformation__result
+    &__result {
+        font-size: 28px;
+        color: #fff;
+    }
+
+    // .transformation__submit
+    &__submit {
+        display: flex;
+        justify-self: center;
+    }
+}

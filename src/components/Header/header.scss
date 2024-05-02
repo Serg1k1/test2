@@ -1,0 +1,17 @@
+.header {
+    background-color: #1565c0;
+    color: #fff;
+    // .header__container
+    &__container {
+    }
+
+    // .header__title
+    &__title {
+        font-size: 36px;
+        text-transform: uppercase;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+}
