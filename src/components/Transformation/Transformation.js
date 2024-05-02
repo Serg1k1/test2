@@ -45,7 +45,7 @@ const Transformation = () => {
                         <GoogleMaps setLocation={setCurrLocaction} currPos={true} />
                     </div>
 
-                    <div className="transformation__result">{loadingStatus === 'loading' ? 'loading...' : timeDifference === null ? 'Please fill all the fields' : `${timeDifference} hours your time difference`}</div>
+                    <div className="transformation__result">{loadingStatus === 'loading' ? 'loading...' : timeDifference === null ? 'Please fill all the fields' : `${timeDifference} hours the time difference`}</div>
                     <div className="transformation__input">
                         <h4 className='transformation__input-title' >Select needed location</h4>
                         <GoogleMaps setLocation={setNeededLocation} currPos={false} />
