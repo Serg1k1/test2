@@ -26,7 +26,8 @@ const Transformation = () => {
             const result = needTime.hour - currTime.hour;
 
             setTimeDifference(result)
-
+        } else {
+            setTimeDifference(null)
         }
     }
 
@@ -38,11 +39,17 @@ const Transformation = () => {
     return (
         <div className="transformation">
             <div className="transformation__container">
-                <h2 className="transformation__title">Choose the citys you need to get the time difference or get your current location</h2>
                 <div className="transformation__inputs">
-                    <GoogleMaps setLocation={setCurrLocaction} currPos={true} />
-                    <div className="transformation__result">{loadingStatus === 'loading' ? 'loading...' : `${timeDifference ?? 'your'} hours difference`}</div>
-                    <GoogleMaps setLocation={setNeededLocation} currPos={false} />
+                    <div className="transformation__input">
+                        <h4 className='transformation__input-title' >Select your location</h4>
+                        <GoogleMaps setLocation={setCurrLocaction} currPos={true} />
+                    </div>
+
+                    <div className="transformation__result">{loadingStatus === 'loading' ? 'loading...' : timeDifference === null ? 'Please fill all the fields' : `${timeDifference} hours your time difference`}</div>
+                    <div className="transformation__input">
+                        <h4 className='transformation__input-title' >Select needed location</h4>
+                        <GoogleMaps setLocation={setNeededLocation} currPos={false} />
+                    </div>
                 </div>
                 <div className="transformation__submit">
                     <Button onClick={getTimeDifference} variant="contained" >Check the difference</Button>

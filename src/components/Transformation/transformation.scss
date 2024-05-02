@@ -25,7 +25,7 @@
     &__inputs {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         gap: 20px;
     }
 
@@ -33,11 +33,21 @@
     &__result {
         font-size: 28px;
         color: #fff;
+        margin-bottom: 15px;
     }
 
     // .transformation__submit
     &__submit {
         display: flex;
         justify-self: center;
+    }
+    &__input {
+        display: grid;
+        gap: 12px;
+    }
+    &__input-title {
+        font-size: 18px;
+        color: #fff;
+        text-transform: uppercase;
     }
 }

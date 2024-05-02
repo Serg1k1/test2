@@ -1,7 +1,14 @@
 .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
     color: #fff;
 }
+.MuiAutocomplete-inputRoot {
+    
+}
 
-.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
-    border-color: #fff !important;
+.MuiFormLabel-root.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    color: #fff;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline.Mui-active {
+    border-color: #fff;
 }
